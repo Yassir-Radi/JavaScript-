@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/images/favicon-32x32.png">
+  <title>Frontend Mentor Tip calculator app</title>
+</head>
+<body>
+  
+    <header>
+        <h1>SPLI<br/>TTER</h1>
+    </header>
+
+    <main>
+      <div class="left-section">        
+        <div>
+          <h2>Bill</h2>
+          <span class="material-symbols-outlined icons">attach_money</span>
+          <input class="input-field" id="bill" type="number" placeholder="0" min="0"/>
+        </div>
+
+        <div>
+          <h2>Select Tip %</h2>
+          <div class="tips">
+            <button class ="btn5 btns">5%</button>
+            <button class ="btn10 btns">10%</button>
+            <button class ="btn15 btns">15%</button>
+            <button class ="btn25 btns">25%</button>
+            <button class ="btn50 btns">50%</button>
+            <input class="btn custom" type="number" placeholder="Custom" min="0"/>
+          </div>
+        </div>
+      
+        <div>
+          <div>
+            <h2>Number of People</h2>
+            <span id="input-error" class="hide-error">Can't be zero</span>
+          </div>
+          <span class="material-symbols-outlined icons">
+            person
+            </span>
+          <input class="input-field" id="number-of-people" type="number" placeholder="0" min="0" />
+        </div>
+      </div>
+
+      
+      <div class="right-section">
+          <div class="right-section-results">
+            <div class="results-box">
+              <div class="text-holder">
+                <h3>Tip Amount</h3>
+                <h4>/ person</h4>
+              </div>
+              <div class="results tip-amount">$0.00</div>
+            </div>
+          
+            <div class="results-box">
+              <div class="text-holder">
+                <h3>Total</h3>
+                <h4>/ person</h4>
+              </div>
+              <div class="results total">$0.00</div>
+            </div>
+          </div>
+      
+        <div>
+          <button class="btn-reset">RESET</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

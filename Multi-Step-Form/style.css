@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+  --Marine-blue: #02295a;
+  --Purplish-blue: #473dff;
+  --Pastel-blue: #adbeff;
+  --Light-blue: #bfe2fd;
+  --Strawberry-red: #ed3548;
+  --Cool-gray: #9699ab;
+  --Light-gray: #d6d9e6;
+  --Magnolia: #f0f6ff;
+  --Alabaster: #fafbff;
+  --White: #ffffff;
+}
+
+.inputs{
+  position: relative;
+}
+
+
+*{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.cards-style{
+  background-color: var(--Magnolia);
+  border-color: var(--Purplish-blue) !important;
+}
+
+.plan{
+  display: none;
+}
+
+.add-ons{
+  display: none;
+}
+
+.personal-info{
+  position: relative;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,input,picture,button{
+  display: block;
+}
+
+button,input{
+  font-family: inherit;
+}
+
+body{
+  background-color: var(--Light-blue);
+}
+
+.mob-container{
+  display: none;
+}
+
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--White);
+  padding: 0.62rem 0.62rem;
+  border-radius: 15px;
+}
+
+.sidebar{
+  background-image: url("images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem 1.8rem;
+  border-radius: 10px;
+}
+
+.sidebar button{
+  border-radius: 50%;
+  padding: 0.3rem 1rem;
+  background: transparent;
+  border: 1px solid var(--White);
+  height: 40px;
+  cursor: pointer;
+}
+
+.sidebar .btn1{
+  background-color: var(--Light-blue);
+}
+
+.sidebar div{
+  margin-bottom: 20px;
+}
+
+.menu h5{
+  color: var(--White);
+  text-transform: uppercase;
+}
+
+.menu p {
+  color:  var(--Cool-gray);
+  text-transform: uppercase;
+}
+
+.sidebar .first-step{
+  display: flex;
+  grid-gap: 10px;
+}
+
+.sidebar .second-step{
+  display: flex;
+  grid-gap: 10px;
+}
+
+.sidebar .third-step{
+  display: flex;
+  grid-gap: 10px;
+}
+
+.sidebar .fourth-step{
+  display: flex;
+  grid-gap: 10px;
+}
+
+.form-page{
+  padding: 2rem 1.5rem 1rem 1.5rem;
+}
+
+.personal-info h2{
+  position: relative;
+}
+
+.personal-info p{
+  position: relative;
+}
+
+.personal-info p:first-of-type:not(.name, .phone, .email){
+  color: var(--Cool-gray);
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+}
+
+.personal-info input{
+  border-radius: 5px;
+  padding: 0.54rem 0.45rem;
+  width: 100%;
+  border: 1px solid var(--Cool-gray);
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+input[type= 'text']{
+  position: relative;
+}
+
+input[type= 'email']{
+  position: relative;
+}
+
+input[type= 'number']{
+  position: relative;
+}
+
+.personal-info button{
+margin-top: 160px;
+margin-left: 290px;
+padding: 0.53rem 0.73rem;
+border-radius: 5px;
+background-color: var(--Marine-blue);
+border: none;
+color: var(--White);
+cursor: pointer;
+width: 100px;
+}
+
+.Name-alert{
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone-alert{
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-alert{
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone{
+  color: var(--Cool-gray);
+}
+
+.email{
+  color: var(--Cool-gray);
+}
+
+.name{
+  color: var(--Cool-gray);
+}
+
+.alert{
+  display: none;
+  color: var(--Strawberry-red);
+}
+
+.btn1{
+  position: relative;
+}
+
+.btn2{
+  position: relative;
+  color: white;
+}
+
+.btn3{
+  position: relative;
+  color: white;
+}
+
+.btn4{
+  position: relative;
+  color: white;
+}
+
+/*Page 2*/
+
+
+
+
+
+
+.plan{
+  display: none;
+}
+
+.plan p:first-of-type:not(.monthly){
+  color: var(--Cool-gray);
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+}
+
+.plan-menu{
+  display: flex;
+ justify-content: space-between;
+ grid-gap: 10px;
+ margin-bottom: 20px;
+}
+
+.plan-menu div{
+  height: 200px;
+  width: 150px;
+  padding: 1.5rem 1.2rem;
+  border: 1px solid var(--Cool-gray);
+  border-radius: 10px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.plan-menu div img{
+  margin-bottom: 40px;
+}
+
+h4 + p{
+  position: relative;
+}
+
+.free-months{
+  color: var(--Purplish-blue);
+  position: relative;
+  font-style: italic;
+  bottom: 1em;
+  font-weight: 550;
+}
+
+.months-hide{
+  display: none;
+}
+
+.month-year{
+  display: flex;
+  justify-content: center;
+  grid-gap: 20px;
+  margin-bottom: 130px;
+  background-color: var(--Light-blue);
+  align-items: center;
+  border-radius: 5px;
+  padding: 0.4rem 0;
+}
+
+.btns{
+  display: flex;
+  justify-content: space-between;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--Marine-blue);
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: var(--White);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.btns button{
+  padding: 0.53rem 0.73rem;
+  border-radius: 5px;
+  background-color: var(--Marine-blue);
+  border: none;
+  color: var(--White);
+  cursor: pointer;
+}
+
+.btns a{
+  text-decoration: none;
+  color:var(--Cool-gray);
+
+}
+
+.btns a:hover{
+  color: var(--Marine-blue);
+}
+
+
+
+/*Page 3*/
+
+.add-ons {
+  display: none;
+}
+
+.add-ons  p{
+  position: relative;
+}
+
+.add-ons  h2{
+  position: relative;
+}
+
+.add-ons  p:first-of-type:not(.describe){
+  color: var(--Cool-gray);
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+}
+
+.add-ons-menu{
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  margin-bottom: 140px;
+}
+
+.add-ons-menu div:not(.description){
+  display: flex;
+  border: 1px solid var(--Cool-gray);
+  align-items: center;
+  border-radius: 5px;
+  padding: 0.9rem 0.9rem;
+  grid-gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add-ons-menu div:not(.description) input{
+  margin-left: 15px;
+}
+
+.add-ons-menu div:not(.description) div{
+  flex: 1;
+}
+
+.add-ons-menu div:not(.description) .money{
+  margin-left: 65px;
+}
+
+.add-ons-menu div input{
+  transform: scale(1.5);
+}
+
+.describe{
+  color: var(--Cool-gray);
+  font-size: 0.85rem;
+}
+
+.description{
+  width: 150px;
+}
+
+.div-color{
+  background-color: var(--Magnolia);
+  border: 1px solid var(--Purplish-blue) !important;
+}
+
+
+/*----------------------------------------------
+---------------------Page 4--------------------*/
+
+.Finishingup {
+  display: none;
+}
+
+.online{
+  justify-content: space-between;
+}
+
+.storage{
+  justify-content: space-between;
+}
+
+.custom{
+  justify-content: space-between;
+}
+
+.Finishingup p{
+  position: relative;
+}
+
+.Finishingup h2{
+  color:  var(--Marine-blue);
+}
+
+.Finishingup .first-p{
+  color: var(--Cool-gray);
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+}
+
+.choice{
+  background-color: var(--Magnolia);
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  padding: 1.5rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* .choice div:not(.monthly-arcade){
+  display: flex;
+  justify-content: space-between;
+} */
+.total-value{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  padding: 0 1.5rem;
+}
+
+.total-value p{
+  color: var(--Cool-gray);
+}
+
+.Arcade-monthly p{
+  color: var(--Marine-blue);
+}
+
+.Arcade-monthly{
+  display: flex;
+  justify-content: space-between;
+}
+
+div.online p:first-child{
+  color: var(--Cool-gray);
+}
+
+div.online p:nth-of-type(2){
+  position: relative;
+}
+
+div.storage p:first-child{
+  color: var(--Cool-gray);
+}
+
+div.storage p:nth-of-type(2){
+  position: relative;
+}
+
+div.custom p:first-child {
+  color: var(--Cool-gray);
+}
+
+div.online p:nth-of-type(2){
+  position: relative;
+}
+
+
+/* --------Page 5---------*/
+
+.thank-you{
+text-align: center;
+margin: 100px 20px;
+display: none;
+}
+
+.thank-you h1{
+  color: var(--Marine-blue);
+  margin-bottom: 10px;
+}
+
+.thank-you p{
+  color: var(--Cool-gray);
+  font-size: 0.85rem;
+}
+
+.thank-you img{
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.hide-all{
+  display: none;
+}
+
+#Arcade-value{
+  position: relative;
+}

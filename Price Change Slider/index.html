@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+  <main>
+    <div class="heading">
+      <h1>Simple, traffic-based pricing</h1>
+      <div class="heading-text">
+        <p>Sign-up for our 30-day trial. </p>
+        <p> No credit card required.</p>
+      </div>
+    </div>
+    <div class="content">
+      <h2 id="pageViews">100K PAGEVIEWS</h2>
+      <div class="slider-container">
+        <input type="range" min="1" max="5" step="1" class="slider" id="myRange">
+      </div>
+      <div class="cost" id="cash">
+        <p >$16.00</p>
+        <small>/ month</small>
+      </div>
+      <div class="billing">
+        <p>Monthly Billing</p>
+        <input type="checkbox" id="switch"><label for="switch"></label>
+        <p>Yearly Billing <span> -25%<span id="desktop"> discount</span></span></p>
+      </div>
+      <div class="benefits">
+        <ul>
+          <li><img src="./images/icon-check.svg" alt="check-icon">Unlimited websites</li>
+          <li><img src="./images/icon-check.svg" alt="check-icon">100% data ownership</li>
+          <li><img src="./images/icon-check.svg" alt="check-icon">Email reports</li>
+        </ul>
+        <button>Start my trial</button>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

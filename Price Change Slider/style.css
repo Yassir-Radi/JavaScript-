@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#desktop{
+    display: none;
+}
+body{
+    background-image: url('./images/bg-pattern.svg');
+    background-color: hsl(230, 100%, 99%);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    text-align: center;
+    font-family: 'Manrope',sans-serif;
+}
+.heading{
+    margin-top: 3em;
+    margin-bottom: 2em;
+    background-image: url('./images/pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    padding: 3em 1em;
+}
+.heading h1{
+    color: hsl(227, 35%, 25%);
+    font-size: 1.35em;
+    margin-bottom: .5em;
+}
+.heading p{
+    font-size: 1em;
+    color: hsl(225, 20%, 60%);
+}
+.content{
+    background-color: #fff;
+    width: 90%;
+    margin-left: 5%;
+    padding: 2.5em 2em;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .05);
+    border-radius: .75em;
+    display: flex;
+    flex-direction: column;
+}
+.content h2{
+    color: hsl(225, 20%, 60%);
+    font-size: .9em;
+    letter-spacing: .1em;
+    margin-bottom: 2em;
+}
+.slider-container{
+    width: 100%;
+}
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background-image:linear-gradient(90deg, hsl(174,77%,80%) 50%, hsl(224,65%,95%)50%) ;
+    border-radius: 2em;
+    outline: none;
+    margin-bottom: 2.5em;
+}
+/* slider - custom circle */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url('./images/icon-slider.svg');
+    background-color: hsl(174, 86%, 43%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    box-shadow: 0 13px 30px hsla(174, 86%, 45%, .8);
+}
+
+.slider::-moz-range-thumb {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: url('./images/icon-slider.svg');
+    background-color: hsl(174, 86%, 43%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    border: 0;
+}
+
+.cost{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.cost p{
+    color: hsl(227, 35%, 25%);
+    font-size: 2.25em;
+    margin-right: .25em;
+}
+.cost small{
+    font-size: 1em;
+    color: hsl(225, 20%, 60%);
+}
+.billing{
+    display: flex;
+    font-size: .735em;
+    color: hsl(225, 20%, 60%);
+    align-items: center;
+    margin-left: 1em;
+    margin-right: -1em;
+    margin-bottom: 4em;
+}
+.billing input{
+    display: none;
+}
+.billing label{
+    width: 4em;
+    height: 2em;
+    border-radius: 2em;
+    background-color: hsl(223, 50%, 87%);
+    position: relative;
+    margin: 0 1em;
+}
+.billing label::after{
+    content: '';
+    border-radius: 50%;
+    width: 1.45em;
+    height: 1.45em;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.billing input:checked+label{
+    background-color: hsl(174,77%,80%);
+}
+.billing input:checked +label::after{
+    left: 75%;
+}
+.billing p{
+    display: flex;
+    align-items: center;
+}
+.billing span{
+    display: flex;
+    align-items: center;
+    background-color: hsl(14, 92%, 95%);
+    color: hsl(15, 100%, 70%);
+    padding: .25em .75em;
+    border-radius: 2em;
+    font-size: .9em;
+    font-weight: 800;
+}
+.benefits{
+    margin: -2em;
+    padding: 1.5em;
+    border-top: 1px solid #ddd;
+}
+.benefits ul{
+    list-style: none;
+    margin-bottom: 1.5em;
+}
+.benefits ul li img{
+    margin-right: 1em;
+}
+.benefits ul li{
+    color: hsl(225, 20%, 60%);
+    font-size: .9em;
+    margin-bottom: .75em;
+}
+.benefits button{
+    color: hsl(226, 100%, 87%);
+    background-color: hsl(227, 35%, 25%);
+    border: 0;
+    border-radius: 2em;
+    padding: 1em 3.5em;
+    font-weight: 600;
+    font-size: .9em;
+}
+
+@media (min-width: 768px) {
+    .heading h1{
+        font-size: 2em;
+    }
+    .heading-text{
+        display: flex;
+        justify-content: center;
+    }
+    .heading p{
+        margin-right: 3px;
+    }
+    .content {
+        width: 40%;
+        margin-left: 30%;
+        position: relative;
+        padding: 2.5em 3em;
+    }
+    .content h2 {
+        font-size: 1em;
+        margin-top: 1em;
+        margin-bottom: 4em;
+        text-align: left;
+    }
+    .cost {
+        position: absolute;
+        top: 2.5em;
+        right: 3em;
+    }
+    .billing {
+        margin: 2em 0 7em 8.5em;
+        justify-content: center;
+    }
+    #desktop{
+        display: inline-block;
+        font-size: 1em;
+        margin-left: -5px;
+        background-color: transparent;
+    }
+    .billing span {
+        margin-left: 1em;
+    }
+    .benefits {
+        margin: -3em;
+        padding: 2em 3em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .benefits ul {
+        margin-bottom: 0em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .benefits button:hover{
+        color: white;
+        cursor: pointer;
+    }
+    .slider::-webkit-slider-thumb:hover{
+        background-color: hsl(174, 86%, 35%);
+    }
+    .billing label:hover{
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,72 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+canvas {
+    display: flex;
+    margin: 100px auto;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    place-content: center;
+    place-items: center;
+    font-size: 2rem;
+    position: relative;
+    top: 2em;
+}
+
+label{
+    width: 70px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+label:nth-child(2){
+    background-color: rgb(76, 180, 180);
+}
+
+label:nth-child(4){
+    background-color: greenyellow;
+}
+
+.wrap p{
+    font-weight: bold;
+    font-style: italic;
+}
+
+#reset{
+    width: 70px;
+    padding: .7em;
+    position: relative;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    bottom: 90px;
+    left: 38em;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#restart{
+    width: 90px;
+    padding: .7em;
+    position: relative;
+    background-color: rgb(124, 26, 216);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    bottom: 90px;
+    left: 63em;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+}

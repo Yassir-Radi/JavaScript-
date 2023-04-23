@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tic-Tae-Toe</title>
+</head>
+<body>
+    
+
+<section class="wrapper-all">
+    <button class="home-btn">New game (vs player)</button>
+    <div class="modal hidden">
+        <h4>You won !</h4>
+        <h1 class="modal-text">X takes the round</h1>
+        <div class="btn-wrapper">
+        <button class="cancel-btn">Quit</button>
+        <button class="reset-btn">Next round</button>
+        </div>
+    </div>
+
+    <div class="modal-2 hidden-2">
+        <h1>Restart Game ?</h1>
+        <div class="btn-wrapper-2">
+        <button class="cancel-btn-2">No, Cancel</button>
+        <button class="reset-btn-2">Yes, Restart</button>
+        </div>
+    </div>
+
+<main class="hidden">
+
+<div class="container-1">
+    <div>
+       <img src="/images/logo.svg" alt="">
+    </div>
+    <div>
+       <button class="btn-turn"><span class="span-turn">X</span> TURN</button>
+    </div>
+    <div class="btn-restart">
+        <img class="icon-restart" src="/images/icon-restart.svg" alt="">
+    </div>
+</div>
+
+<div class="container-2">
+    <div id="box-1" onclick="draw(this.id)"></div>
+    <div id="box-2" onclick="draw(this.id)"></div>
+    <div id="box-3" onclick="draw(this.id)"></div>
+    <div id="box-4" onclick="draw(this.id)"></div>
+    <div id="box-5" onclick="draw(this.id)"></div>
+    <div id="box-6" onclick="draw(this.id)"></div>
+    <div id="box-7" onclick="draw(this.id)"></div>
+    <div id="box-8" onclick="draw(this.id)"></div>
+    <div id="box-9" onclick="draw(this.id)"></div>
+</div>
+
+<div class="container-3">
+    <div>
+      <p>X (Ply1)</p>
+      <p class="counter-x">0</p>
+    </div>
+    <div>
+        <p>Ties</p>
+        <p class="ties">0</p>
+    </div>
+    <div>
+      <p>O (Ply2)</p>
+      <p class="counter-y">0</p>
+    </div>
+</div>
+
+</main>
+</section>
+
+</body>
+</html>
